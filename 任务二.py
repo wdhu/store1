@@ -179,14 +179,11 @@ def draw(n):
             print(data,end='')
         print('')
 
-# 使用while循环实现99乘法表的打印
-a = [1,2,3,4,5,6,7,8,9]
-for i in a:
-    j = 1
-    while j <= i :
-        print(f'{i}*{j}={i*j}',end='\t')
-        j += 1
-    print()
+# 使用for循环实现99乘法表的打印
+    for i in range(1,10):
+        for j in range(1,i+1):
+            print(j,"*",i,"=",(j*i),"\t",end="")
+        print()
 
 # 编程实现99乘法表的倒叙打印
 def reverseMultiplication():
