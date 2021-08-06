@@ -14,9 +14,9 @@ while True:
         print("小了！")
         m = m-500
         print("由于您猜错了扣除您500硬币，您的硬币余额为",m)
-    elif m < 500:
-        print("抱歉，您的余额不足")
-        break
+        if m < 500:
+            print("抱歉，您的余额不足")
+            break
     else:
         print("恭喜您猜中了，本次数字为",num,"您总共猜了",count,"次")
         m = m+10000
